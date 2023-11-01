@@ -193,3 +193,54 @@ print(numpy.arctanh(1/2))
 
 _globals = globals()
 question2_ii(_globals)
+
+
+# ============================
+# question 3)
+# ============================
+
+# a)
+# import any necessary functions
+# Assign your solutions to the questions above to the variables below.
+p = 6
+q = 9
+
+x = numpy.cbrt(q/2 + numpy.sqrt((q//2)**2 - (p//3)**2)) + numpy.cbrt(q/2 - numpy.sqrt((q//2)**2 - (p//3)**2))
+#print(p)
+#print(q)
+#print(x)
+
+if round(x)**3 == p*round(x) + q:
+    x = round(x)
+
+assert(x == question3(p, q))
+print("Question 3(a) passed!")
+
+# b)
+# import any necessary functions
+# Assign your solutions to the questions above to the variables below.
+p = 3
+q = 18
+
+x = numpy.cbrt(q/2 + numpy.sqrt((q//2)**2 - (p//3)**2)) + numpy.cbrt(q/2 - numpy.sqrt((q//2)**2 - (p//3)**2))
+#print(p)
+#print(q)
+#print(x)
+
+assert(x == question3(p, q))
+print("Question 3(b) passed!")
+
+# c)
+# import any necessary functions
+# Assign your solutions to the questions above to the variables below.
+p = 6
+q = 4
+temp = 2 + 4j
+print((-1) ** (1/2))
+x = (q/2 + numpy.sqrt((q//2)**2 - (p//3)**2))**(1/3) + numpy.cbrt(q/2 - numpy.sqrt((q//2)**2 - (p//3)**2))
+#print(p)
+#print(q)
+print((2+4j)**(1/2) + 1)
+
+assert(x == question3(p, q))
+print("Question 3(b) passed!")
