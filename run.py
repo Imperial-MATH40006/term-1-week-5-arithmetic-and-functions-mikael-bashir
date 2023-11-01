@@ -1,6 +1,7 @@
 import time
 from autograder_term1week5 import *
 import math
+import numpy
 from datetime import datetime
 _globals = globals()
 
@@ -148,7 +149,47 @@ question2_i(_globals)
 
 
 # ============================
-# question 2)i)
+# question 2)ii)
 # ============================
 
 
+q2iia_answer = numpy.sqrt(50)
+q2iib_answer = numpy.cos(numpy.pi / 7)
+q2iic_answer = numpy.exp(numpy.e ** 2)
+q2iid_answer = numpy.log(58)
+q2iie_answer = numpy.log10(58)
+q2iif_answer = numpy.arctan(1/2)
+q2iig_answer = numpy.arctanh(1/2)
+#print(q2iia_answer)
+#print(q2iib_answer)
+#print(q2iic_answer)
+#print(q2iid_answer)
+#print(q2iie_answer)
+#print(q2iif_answer)
+#print(q2iig_answer)
+
+'''
+# a)
+print(numpy.sqrt(50))
+
+# b)
+print(numpy.cos(numpy.pi / 7))
+
+# c)
+print(numpy.exp(numpy.e**2))
+
+# d)
+print(numpy.log(58))
+
+# e)
+print(numpy.log10(58))
+
+# f)
+print(numpy.arctan(1/2))
+
+# g)
+print(numpy.arctanh(1/2))
+'''
+
+_globals = globals()
+question2_ii(_globals)
