@@ -236,11 +236,11 @@ print("Question 3(b) passed!")
 p = 6
 q = 4
 temp = 2 + 4j
-print((-1) ** (1/2))
-x = (q/2 + numpy.sqrt((q//2)**2 - (p//3)**2))**(1/3) + numpy.cbrt(q/2 - numpy.sqrt((q//2)**2 - (p//3)**2))
+print((-1) ** (1/2), "here")
+x = (q/2 + ((q//2)**2 - (p//3)**2)**(1/2))**(1/3) + (q/2 - ((q//2)**2 - (p//3)**2)**(1/2))**(1/3)
 #print(p)
 #print(q)
-print((2+4j)**(1/2) + 1)
+print(x)
 
 assert(x == question3(p, q))
-print("Question 3(b) passed!")
+print("Question 3(c) passed!")
