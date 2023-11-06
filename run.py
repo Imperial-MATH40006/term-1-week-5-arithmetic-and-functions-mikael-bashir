@@ -1,6 +1,6 @@
 import time
 from autograder_term1week5 import *
-import math
+import math, cmath
 import numpy
 from datetime import datetime
 _globals = globals()
@@ -236,11 +236,19 @@ print("Question 3(b) passed!")
 p = 6
 q = 4
 temp = 2 + 4j
-print((-1) ** (1/2), "here")
 x = (q/2 + ((q//2)**2 - (p//3)**2)**(1/2))**(1/3) + (q/2 - ((q//2)**2 - (p//3)**2)**(1/2))**(1/3)
+print(x)
+x = (q/2 + cmath.sqrt((q//2)**2 - (p//3)**2))**(1/3) + (q/2 - cmath.sqrt((q//2)**2 - (p//3)**2))**(1/3)
 #print(p)
 #print(q)
 print(x)
 
+print(cmath.log(-2+0j))
+print(numpy.log((-2+0j)))
+print(6)
+
+
 assert(x == question3(p, q))
 print("Question 3(c) passed!")
+
+print(pow())
